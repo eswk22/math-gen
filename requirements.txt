@@ -8,7 +8,7 @@ chromadb
 tiktoken
 faiss-cpu
 wikipedia
-psycopg2
+psycopg2-binary
 pinecone-client
 pgvector
 streamlit
