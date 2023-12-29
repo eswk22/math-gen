@@ -3,7 +3,9 @@ import google.generativeai as genai
 from langchain.prompts import PromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
+from dotenv import load_dotenv
 
+load_dotenv()  # take environment variables from .env.
 genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
 
 # Set model configuration

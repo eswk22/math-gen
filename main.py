@@ -1,7 +1,7 @@
 import streamlit as st
 import llm_helper
-from streamlit_javascript import st_javascript
 
+st.set_page_config(initial_sidebar_state="expanded")
 
 def load_html():
     # Create Streamlit app layout
