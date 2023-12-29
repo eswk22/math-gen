@@ -14,8 +14,6 @@ def load_html():
         # Generate and display math problem
         if st.button("Generate Problem"):
             st.session_state["problem"] = llm_helper.generate_math_problem(problem_type, difficulty_level, word_problem)
-        if st.button("Print"):
-           st_javascript("function print(){window.print();return false;} print();")
     result_container = st.container()
     with result_container:
         if "problem" in st.session_state:
